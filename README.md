@@ -29,7 +29,9 @@ Este projeto foi criado para praticar o desenvolvimento Full Stack com Python, f
 
 2. **Crie um ambiente virtual**
    ```bash
+   # Cria o ambiente virtual
    python -m venv venv
+   # Entra no ambiente virtual 
    source venv/bin/activate  # Linux/Mac
    # ou
    venv\Scripts\activate     # Windows
