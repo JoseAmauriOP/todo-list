@@ -55,4 +55,4 @@ Este projeto foi criado para praticar o desenvolvimento Full Stack com Python, f
 6. Acesse `http://127.0.0.1:8000` no seu navegador.
 
 ---
-Desenvolvido por [José Amauri] 
+Desenvolvido por José Amauri 
