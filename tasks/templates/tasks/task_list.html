@@ -41,8 +41,8 @@
 
                 <div class="mt-4 md:mt-0 md:ml-6 flex items-center space-x-3">
                     <!-- Placeholder buttons for future actions -->
-                    <button class="text-indigo-600 hover:text-indigo-800 font-medium text-sm transition">Editar</button>
-                    <button class="text-red-600 hover:text-red-800 font-medium text-sm transition">Excluir</button>
+                    <a href="{% url 'task_edit' task.id %}"><button class="text-indigo-600 hover:text-indigo-800 font-medium text-sm transition">Editar</button></a>
+                    <a href="{% url 'task_delete' task.id %}"><button class="text-red-600 hover:text-red-800 font-medium text-sm transition">Excluir</button></a>
                 </div>
             </div>
         </li>
