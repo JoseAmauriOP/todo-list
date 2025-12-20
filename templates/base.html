@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Todo List{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal min-h-screen flex flex-col">
+
+    <nav class="bg-indigo-600 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold hover:text-indigo-200 transition">Todo List</a>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-white hover:text-indigo-200 transition font-medium">Home</a></li>
+                <li><a href="#" class="text-white hover:text-indigo-200 transition font-medium">Tarefas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-6 flex-grow">
+        <!-- É aqui que o conteúdo específico das outras páginas vai entrar -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-4 mt-auto">
+        <div class="container mx-auto text-center text-sm">
+            &copy; 2024 Todo List App.
+        </div>
+    </footer>
+
+</body>
+
+</html>
