@@ -6,7 +6,7 @@ class Task(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Criado em")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Atualizado em")
     completed = models.BooleanField(default=False, verbose_name="Concluído")
-    due_date = models.DateTimeField(null=True, blank=True, verbose_name="Data de Entrega")
+    due_date = models.DateField(null=True, blank=True, verbose_name="Data de Entrega")
 
     class Meta:
         ordering = ['-created_at']
